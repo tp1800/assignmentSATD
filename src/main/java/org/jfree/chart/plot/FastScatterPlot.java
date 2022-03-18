@@ -56,6 +56,8 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
 import java.util.ResourceBundle;
+
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import org.jfree.chart.ChartElementVisitor;
 
 import org.jfree.chart.axis.AxisSpace;
@@ -138,8 +140,9 @@ public class FastScatterPlot extends Plot implements ValueAxisPlot, Pannable,
     private boolean rangePannable;
 
     /** The resourceBundle for the localization. */
-    /** FIXME this is not final but should be */
-    protected static ResourceBundle localizationResources
+
+    @SuppressFBWarnings("MS_SHOULD_BE_FINAL")
+    protected static final ResourceBundle localizationResources
             = ResourceBundle.getBundle("org.jfree.chart.plot.LocalizationBundle");
 
     /**
