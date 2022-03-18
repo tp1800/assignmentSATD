@@ -117,9 +117,9 @@ public class SamplingXYLineRenderer extends AbstractXYItemRenderer
         /** The last x-coordinate visited by the seriesPath. */
         double lastX;
 
-        /** The initial y-coordinate for the current x-coordinate. */
+        /** FIXME not needed The initial y-coordinate for the current x-coordinate. */
         double openY = 0.0;
-        /** FIXME not needed. */
+
         /** The highest y-coordinate for the current x-coordinate. */
         double highY = 0.0;
 
