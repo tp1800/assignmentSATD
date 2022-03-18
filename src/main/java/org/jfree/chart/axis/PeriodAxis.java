@@ -1149,6 +1149,7 @@ public class PeriodAxis extends ValueAxis
 
                         millisecond});
             }
+            /** TODO throw new exception*/
             catch (Exception e2) {
                 // do nothing
                 throw new RuntimeException("Something failed!", e);
