@@ -82,9 +82,10 @@ public abstract class RegularTimePeriod implements TimePeriod, Comparable,
             result = (RegularTimePeriod) constructor.newInstance(
                     new Object[] {millisecond, zone, locale});
         }
-        /** FIXME throw new error handle*/
+
         catch (Exception e) {
             // do nothing, so null is returned
+            throw new RuntimeException("something failed",e);
         }
         return result;
     }
