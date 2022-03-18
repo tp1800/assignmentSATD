@@ -168,9 +168,10 @@ public class PaintUtils {
                     }
                 }
             }
-            /** TODO Throw new exception error**/
+
         } catch (Exception e) {
             //
+            throw new RuntimeException("something failed",e);
         }
 
         // no defined constant color, so this must be a user defined color
