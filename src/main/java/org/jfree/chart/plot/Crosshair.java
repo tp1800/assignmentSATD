@@ -141,7 +141,7 @@ public class Crosshair implements Cloneable, PublicCloneable, Serializable {
     public Crosshair() {
         this(0.0);
     }
-
+/** FIXME this needs to be serialized*//
     /**
      * Creates a new crosshair with the specified value.
      *
