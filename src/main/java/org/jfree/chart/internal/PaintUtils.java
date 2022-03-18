@@ -168,6 +168,7 @@ public class PaintUtils {
                     }
                 }
             }
+            /** TODO Throw new exception error**/
         } catch (Exception e) {
             //
         }
