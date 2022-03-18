@@ -170,6 +170,7 @@ public class MeterPlot extends Plot implements Serializable, Cloneable {
     private NumberFormat tickLabelFormat;
 
     /** The resourceBundle for the localization. */
+    /** FIXME this should be final */
     protected static ResourceBundle localizationResources
             = ResourceBundle.getBundle("org.jfree.chart.plot.LocalizationBundle");
 
