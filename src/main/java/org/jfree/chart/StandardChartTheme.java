@@ -209,7 +209,7 @@ public class StandardChartTheme implements ChartTheme, Cloneable,
     private transient Paint errorIndicatorPaint;
 
     /** The grid band paint for a {@link SymbolAxis}. */
-    /** TODO check this out*/
+
     private transient Paint gridBandPaint = SymbolAxis.DEFAULT_GRID_BAND_PAINT;
 
     /** The grid band alternate paint for a {@link SymbolAxis}. */
